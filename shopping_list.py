@@ -19,6 +19,8 @@ while ShoppingCartLeeg == True:
     while True:
         if GroceryList[0] == "---" and GroceryList[1] == "---" and GroceryList[2] == "---" and GroceryList[3] == "---" and GroceryList[4] == "---":
             print("Je bent klaar met boodschappen")
+            time.sleep(1)
+            os.system("clear")
             break
         else:
             print("Wat wil je nu pakken?", GroceryList)
@@ -64,13 +66,15 @@ while ShoppingCartLeeg == True:
             print("Je kan aleen uit deze producten kiezen", GroceryList)
             time.sleep(1)
             os.system("clear")
-            
+              
     
     if ShoppingCart[0] != "" and ShoppingCart[1] != "" and ShoppingCart[2] != "" and ShoppingCart[3] != "" and ShoppingCart[4] != "":
         ShoppingCartLeeg = False
 
 
 if ShoppingCartLeeg == False:
-    print("asdas")
-    print(GroceryList)
-    print(ShoppingCart)
+    print("Je winkelmand is vol!", ShoppingCart)
+    print("En alles of je lijstje is afgestreepd", GroceryList)
+    print("Doei!")
+    time.sleep(1)
+    os.system("clear")
