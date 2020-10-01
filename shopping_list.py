@@ -71,6 +71,6 @@ while ShoppingCartLeeg == True:
 
 
 if ShoppingCartLeeg == False:
-    print("asdas")
+    print("Shopping Done")
     print(GroceryList)
     print(ShoppingCart)
